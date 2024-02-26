@@ -1,0 +1,134 @@
+.navbar {
+    background-color: #F78DA7;
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%;
+    padding-right: 3%;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        list-style: none;
+        padding-right: 3%;
+        text-align: center;
+        white-space: nowrap;
+
+        
+        a {
+            
+            padding-top: 20px;
+        }
+
+        
+        
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.nav-link {
+    color: black;
+    padding-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+.main-button {
+    background-color: #23292B;
+    color: white;
+    width: 245px;
+    height: 80px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.jumbotron {
+    height: 800px;
+    background: no-repeat center;
+    background-color: #cccccc;
+    background-blend-mode: multiply;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.hero-text-div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+
+    p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+}
+
+.footer-links {
+    color: white;
+}
+
+.footer {
+    background-color: #303633;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    padding-top: 150px;
+
+    h4 {
+        padding-top: 15px;
+        font-size: 24px;
+    }
+
+
+    @include media-breakpoint-down (lg) {
+        flex-direction: column;
+        padding-top: 50px;
+        height: 1075px;
+    }
+
+}
+
+.footer-links {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links:hover {
+    color: #78758D;
+}
+
+.footer-col1, .footer-col2, .footer-col3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot-head {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.copyright {
+    background-color: #4A504D;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
