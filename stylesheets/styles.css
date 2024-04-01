@@ -1,0 +1,123 @@
+.main-button {
+    background-color: #23292b;
+    color: white;
+    width: 245px;
+    height: 80px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.jumbotron {
+    height: 800px;
+    background: no-repeat center;
+    background-color: #ccc;
+    background-blend-mode: multiply;
+}
+.hero-text-div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+}
+.hero-text-div p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+.mainFlamingoLogo {
+    width: 180px;
+    height: 158px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.about-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.aboutLogo {
+    width: 500px;
+    height: 440px;
+}
+.about-main-text {
+    width: 648px;
+}
+@media (max-width: 1000px) {
+    .about-main {
+        flex-direction: column;
+   }
+    .aboutLogo {
+        width: 250px;
+        height: 220px;
+   }
+}
+@media (max-width: 700px) {
+    .about-main-text {
+        width: 292px;
+   }
+}
+.blog-cards {
+    width: 375px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f58ca7;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid gray;
+    box-shadow: 10px 10px 10px lightgray;
+    margin-bottom: 35px;
+}
+.blog-cards img {
+    width: 372px;
+    height: 195px;
+    border-radius: 15px 15px 0px 0px;
+}
+.blog-cards h3 {
+    margin-top: 20px;
+}
+.blog-cards h4 {
+    padding-top: 30px;
+}
+.blog-cards-section {
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.before-after {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.before-after-col1, .before-after-col2 {
+    display: flex;
+    flex-direction: column;
+}
+.Photos {
+    width: 617px;
+    margin-bottom: 35px;
+    box-shadow: 10px 10px 10px lightgray;
+}
+@media (max-width: 768px) {
+    .Photos {
+        width: 347px;
+   }
+}
+@media (max-width: 1250px) {
+    .before-after {
+        flex-direction: column;
+        align-items: center;
+   }
+}

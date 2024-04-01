@@ -1,0 +1,52 @@
+.index-quote {
+    font-size: 24px;
+    text-align: center;
+    padding: 40;
+}
+.serviceCards {
+    width: 495px;
+    height: 850px;
+    background-color: #303633;
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+.serviceCards h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.serviceCards p, .serviceCards li {
+    font-size: 18px;
+}
+.serviceCards p {
+    text-align: center;
+}
+.serviceCards h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.serviceCards li {
+    padding-bottom: 3px;
+}
+.serviceFlex {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.index-questions {
+    padding: 40px;
+    text-align: center;
+}
+.questions-contacts {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 375px;
+    justify-content: space-between;
+    align-items: center;
+}

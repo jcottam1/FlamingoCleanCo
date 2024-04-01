@@ -4,6 +4,7 @@ require 'config.php';
 //php scripts will go here
 
 ?>
+<?= include_css() ?>
 <?= template_header() ?>
 <?= template_nav() ?>
 

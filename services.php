@@ -1,29 +1,20 @@
 <?php
 require 'config.php';
-$livingRoom = "livingRoom.jpg";
-$pdo = pdo_connect_mysql();
 
+//php scripts will go here
 session_start();
 ?>
 <?= include_css() ?>
-<?= template_header('Flamingo Clean Co.') ?>
+<?= template_header('Services') ?>
 <?= template_nav() ?>
 
 <!-- START PAGE CONTENT -->
-<div class="jumbotron" id="jumbotron" style="background-image: url('<?php echo "images/hero_images/living-room.jpg";?>')">
+<div class="jumbotron" id="jumbotron" style="background-image: url('<?php echo "images/hero_images/services.jpg";?>')">
       <!--navbar-->
       
     <div class="hero-text-div">
-        <img src="./images/Flamingo-Logo.jpg" alt="Flamingo-Logo" class="mainFlamingoLogo">
-        <a href="about.php"><button class="main-button">Book an Appointment</button></a>
-        <p>Or call at (435) 709-6611</p>   
+        <h1 class="hero-title">Services</h1>  
     </div>
-</div>
-<div class="index-quote">
-    <h4>
-        “Cleanliness is our passion. We transform spaces, one clean at a time. At Flamingo Clean co, 
-        we’re committed to excellence, delivering spotless environments for a stress-free life.”
-    </h4>
 </div>
 <div class="main-index-section" style="background-image: linear-gradient(#75424F, #464A59);">
     <div class="service-titles">
@@ -180,22 +171,6 @@ session_start();
         </div>
     </div>
 </div>
-<div class="index-questions">
-    <div class="section-titles">
-        <h2 class="section-titles">Further Questions</h2>
-        <hr class="section-title-hr">
-    </div>
-    <p>
-        If you have any further questions or if you’d like to discuss your unique cleaning needs, please 
-        don’t hesitate to reach out to our friendly team. We’re here to assist you
-    </p>
-    <div class="questions-contacts">
-        <p>Call at: <br> (435) 709-6611</p>
-        <p>Email at: <br> flamingocleanco@gmail.com</p>
-    </div>
-</div>
-
-
 <!-- END PAGE CONTENT -->
 
 <?= template_footer() ?>

@@ -1,0 +1,118 @@
+.message-section {
+    background-color: #eceeed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.message-section h1 {
+    color: white;
+}
+form {
+    padding-top: 50px;
+    margin-top: 50px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    background: no-repeat center;
+    background-color: #ccc;
+    background-blend-mode: multiply;
+}
+.name, .email, .message {
+    display: flex;
+    flex-direction: column;
+}
+.name-phone, .email-address {
+    display: flex;
+    flex-direction: column;
+}
+.name, .email {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.name label, .email label {
+    color: white;
+}
+.name input, .email input {
+    width: 400px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+}
+.message {
+    padding-top: 25px;
+}
+.message textarea {
+    width: 825px;
+    height: 250px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+}
+.message label {
+    color: white;
+}
+.name-email-phone-address {
+    display: flex;
+    flex-direction: row;
+}
+.message-form {
+    display: flex;
+    justify-content: center;
+}
+.message-subtitle {
+    text-align: center;
+}
+.message-button {
+    white-space: nowrap;
+    margin-top: 20px;
+}
+.socials-section {
+    background: no-repeat center;
+    background-color: #f3dae0;
+    background-blend-mode: multiply;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contact-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.socail-div {
+    padding-top: 20px;
+}
+@media (max-width: 992px) {
+    form {
+        width: 600px;
+   }
+    .message textarea {
+        width: 550px;
+   }
+    .name input, .email input {
+        width: 250px;
+   }
+    .contact-socials {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   }
+}
+@media (max-width: 768px) {
+    form {
+        width: 350px;
+   }
+    .message textarea {
+        width: 300px;
+   }
+    .name input, .email input {
+        width: 300px;
+   }
+    .name-email-phone-address {
+        flex-direction: column;
+   }
+}
