@@ -2,8 +2,9 @@
 require 'config.php';
 
 session_start();
-// Initialize an array to hold user responses
+// Initialize arrays to hold user responses
 $userResponses = array();
+$successMessages = array();
 
 // PHP scripts will go here
 if (isset($_POST['username'], $_POST['password'])) {
@@ -21,6 +22,8 @@ if (isset($_POST['username'], $_POST['password'])) {
                 $_SESSION['loggedin'] = TRUE;
                 $_SESSION['username'] = $_POST['username'];
                 $_SESSION['id'] = $id;
+                // Set success message
+                $successMessages[] = 'Login successful.';
                 header('Location: index.php');
                 // Regenerate session ID if a session exists
                 if (session_status() == PHP_SESSION_ACTIVE) {
@@ -42,38 +45,44 @@ if (isset($_POST['username'], $_POST['password'])) {
 <?= template_nav() ?>
 
 <!-- START PAGE CONTENT -->
-<?php if (!empty($userResponses)) : ?>
-    <p class="notification is-danger is-light">
+<?php if (!empty($userResponses)): ?>
+    <div class="alert alert-danger" role="alert">
         <?php echo implode('<br>', $userResponses); ?>
-    </p>
+    </div>
 <?php endif; ?>
-<h1 class="title">Login</h1>
-<form action="" method="post">
-    <div class="field">
-        <label class="label">Username</label>
-        <div class="control has-icons-left">
-            <input name="username" class="input" type="text" placeholder="Enter your username" required>
-            <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
-            </span>
+<?php if (!empty($successMessages)): ?>
+    <div class="alert alert-success" role="alert">
+        <?php echo implode('<br>', $successMessages); ?>
+    </div>
+<?php endif; ?>
+<br>
+<br>
+<h1 class="title text-center">Login</h1>
+<form action="" method="post" class="form-box" style="background-color: white">
+    <div class="field col-sm-3">
+        <strong><label class="label col-form-label-lg">Username</label></strong>
+        <div class="control has-icons-left form-outline mb-4">
+            <input name="username" class="input form-control" type="text" placeholder="Enter your username" required>
+
         </div>
     </div>
-    <div class="field">
-        <label class="label">Password</label>
-        <p class="control has-icons-left">
-            <input name="password" class="input" type="password" placeholder="Password" required>
-            <span class="icon is-small is-left">
-                <i class="fas fa-lock"></i>
-            </span>
-        </p>
+    <div class="field col-sm-3">
+        <strong><label class="label col-form-label-lg">Password</label></strong>
+        <div class="control has-icons-left form-outline mb-4">
+            <input name="password" class="input form-control" type="password" placeholder="Enter your password" required>
+        </div>
     </div>
-
-    <div class="field">
+    <br>
+    <div class="field register-login-button col-sm-3">
         <p class="control">
-            <button class="button is-success">
-                Login
+            <button class="btn btn-primary btn-block mb-4 btn-lg">
+                Sign In
             </button>
         </p>
+    </div>
+    <br>
+    <div class="text-center">
+        <h5 class="register-button text-center">Don't have an account? Register and account <a href="register.php">here.</a></h5>
     </div>
 </form>
 <!-- END PAGE CONTENT -->

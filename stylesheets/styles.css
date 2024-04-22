@@ -121,3 +121,12 @@
         align-items: center;
    }
 }
+
+.form-class {
+    font-size: 30px;
+    background-color: white;
+}
+
+.form-box {
+    background-color: white;
+}

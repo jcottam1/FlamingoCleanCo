@@ -68,8 +68,10 @@ function template_nav($siteTitle = "Flamingo Clean Co")
 
     if (isset($_SESSION['loggedin'])) {
         $logInOutLink = 'out';
+        $cartLink = '<a class="nav-link" href="cart.php"><i class="bi bi-cart-fill"></i> Cart</a>';
     } else {
         $logInOutLink = 'in';
+        $cartLink = '';
     }
 
 
@@ -80,7 +82,7 @@ function template_nav($siteTitle = "Flamingo Clean Co")
         <a class="navbar-brand" href="index.php">
             <img src="./images/Flamingo-Logo.jpg" alt="Flamingo-Logo" class="navFlamingo">
         </a>
-        <span class="nav-link nav-phone"><p class="nav-phone-p">(435) 709-6611</p></span>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -99,7 +101,7 @@ function template_nav($siteTitle = "Flamingo Clean Co")
                     <hr class="nav-hr">
                     <a class="nav-link" href="products.php">Products</a>
                     <br class="nav-hr">
-                    
+                    $cartLink
                     <div class="buttons">
                     <a href="log$logInOutLink.php" class="button is-light">
                         <span class="icon">

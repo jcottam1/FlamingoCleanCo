@@ -16,10 +16,10 @@ session_start();
         <h1 class="hero-title">Services</h1>  
     </div>
 </div>
-<div class="main-index-section" style="background-image: linear-gradient(#75424F, #464A59);">
+<div class="main-index-section"  style="background-color: #ebe8e8">
     <div class="service-titles">
-        <h2>Services</h2>
-        <hr class="service-title-hr">
+        <h2 style="color: black">Services</h2>
+        <hr style="background-color: black" class="service-title-hr">
     </div>
     <div class="serviceFlex">
     

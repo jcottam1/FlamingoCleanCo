@@ -45,34 +45,34 @@ session_start();
         <hr class="section-title-hr">
     </div>
     <div class="message-form">
-        <form style="background-image: url('<?php echo "images/chat.jpg"; ?>')">
+        <form action="send_email.php" method="POST">
             <div class="name-email-phone-address">
                 <div class="name-phone">
                     <div class="name">
                         <label>Name:</label>
-                        <input type="text" name="username" placeholder="Name">
+                        <input type="text" name="username" placeholder="Name" required>
                     </div>
                     <div class="email">
                         <label>Phone Number:</label>
-                        <input type="text" name="phoneNumber" placeholder="Phone Number">
+                        <input type="tel" name="phoneNumber" placeholder="Phone Number" required>
                     </div>
                 </div>
                 <div class="email-address">
                     <div class="email">
                         <label>Email:</label>
-                        <input type="text" name="email" placeholder="Email">
+                        <input type="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="email">
                         <label>Address:</label>
-                        <input type="text" name="address" placeholder="Address">
+                        <input type="text" name="address" placeholder="Address" required>
                     </div>
                 </div>
             </div>
             <div class="message">
                 <label>Your Message:</label>
-                <textarea placeholder="Type your message here"></textarea>
+                <textarea name="message" placeholder="Type your message here"></textarea>
             </div>
-            <a href="about.html"><button class="main-button message-button">Send Message</button></a>
+            <button type="submit" class="main-button message-button">Send Message</button>
         </form>
     </div>
 </div>
@@ -171,9 +171,9 @@ session_start();
         the perfect fit for our team.
     </p>
     <br>
-    <p>flamingocleanco@gmail.com</p>
+    <strong><h4>Email: flamingocleanco@gmail.com</h4></strong>
     <br>
-    <p>(435) 709-6611</p>
+    <strong><h4>Phone Number: (435) 709-6611</h4></strong>
 </div>
 <!-- END PAGE CONTENT -->
 

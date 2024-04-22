@@ -15,7 +15,7 @@ session_start();
       
     <div class="hero-text-div">
         <img src="./images/Flamingo-Logo.jpg" alt="Flamingo-Logo" class="mainFlamingoLogo">
-        <a href="about.php"><button class="main-button">Book an Appointment</button></a>
+        <a href="contact.php"><button class="main-button">Book an Appointment</button></a>
         <p>Or call at (435) 709-6611</p>   
     </div>
 </div>
@@ -25,10 +25,10 @@ session_start();
         we’re committed to excellence, delivering spotless environments for a stress-free life.”
     </h4>
 </div>
-<div class="main-index-section" style="background-image: linear-gradient(#75424F, #464A59);">
-    <div class="service-titles">
-        <h2>Services</h2>
-        <hr class="service-title-hr">
+<div class="main-index-section" style="background-color: #ebe8e8">
+    <div class="service-titles black-title">
+        <h2 style="color: black">Services</h2>
+        <hr style="background-color: black" class="service-title-hr">
     </div>
     <div class="serviceFlex">
     
